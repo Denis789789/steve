@@ -1,3 +1,8 @@
+@keyframes example {
+    0% { transform: translateY(0);}
+    50%{transform: translateY(50px); }
+    100%{transform: translateY(0);}
+}
 p{
     color: red;
 }
@@ -22,6 +27,7 @@ body{
     max-width: 95%;
     min-height: 95%;
     transform: rotate(0deg);
+    animation: example 2s infinite;
 }
 #mainsection{
     height: 60px;
@@ -38,3 +44,20 @@ p{
     margin-right: 3%;
     word-break: keep-all;
 }
+.container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 10px;
+}
+.item{
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    margin: 5px;
+}
+.item2 {order: 3;}
